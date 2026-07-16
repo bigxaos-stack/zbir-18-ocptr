@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#070907">
+  <meta name="description" content="Реквізити для підтримки збору">
+  <title>Підтримай наших захисників</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero container">
+      <h1>ПІДТРИМАЙ<br><span>НАШИХ ЗАХИСНИКІВ!</span></h1>
+      <p>Кожна гривня наближає нас до перемоги.</p>
+    </section>
+
+    <section class="payment container">
+      <div class="section-title">
+        <span></span>
+        <h2>РЕКВІЗИТИ ДЛЯ ДОПОМОГИ</h2>
+        <span></span>
+      </div>
+
+      <div class="details">
+        <article class="detail-card">
+          <div class="detail-card__icon">○</div>
+          <div class="detail-card__content">
+            <small>ПІБ ОТРИМУВАЧА</small>
+            <strong id="recipient">ПАТЮК АНДРІЙ ЮРІЙОВИЧ</strong>
+          </div>
+          <button data-copy="recipient" type="button">Скопіювати</button>
+        </article>
+
+        <article class="detail-card">
+          <div class="detail-card__icon">▣</div>
+          <div class="detail-card__content">
+            <small>БАНК ОТРИМУВАЧА</small>
+            <strong id="bank">РАЙФФАЙЗЕН БАНК</strong>
+          </div>
+          <button data-copy="bank" type="button">Скопіювати</button>
+        </article>
+
+        <article class="detail-card detail-card--highlight">
+          <div class="detail-card__icon">▤</div>
+          <div class="detail-card__content">
+            <small>НОМЕР КАРТКИ</small>
+            <strong id="card">4149 5110 2819 7408</strong>
+          </div>
+          <button data-copy="card" type="button">Скопіювати</button>
+        </article>
+
+        <article class="detail-card">
+          <div class="detail-card__icon">ІПН</div>
+          <div class="detail-card__content">
+            <small>ІПН</small>
+            <strong id="tax">3263121630</strong>
+          </div>
+          <button data-copy="tax" type="button">Скопіювати</button>
+        </article>
+
+        <article class="detail-card">
+          <div class="detail-card__icon">IBAN</div>
+          <div class="detail-card__content">
+            <small>IBAN</small>
+            <strong id="iban">UA14 300335 00000 02620916652865</strong>
+          </div>
+          <button data-copy="iban" type="button">Скопіювати</button>
+        </article>
+
+        <article class="detail-card">
+          <div class="detail-card__icon">▧</div>
+          <div class="detail-card__content">
+            <small>ПРИЗНАЧЕННЯ ПЛАТЕЖУ</small>
+            <strong id="purpose">Поповнення скрині</strong>
+          </div>
+          <button data-copy="purpose" type="button">Скопіювати</button>
+        </article>
+      </div>
+
+      <section class="thanks">
+        <div class="thanks__heart">♡</div>
+        <h3>ДЯКУЄМО ЗА ВАШУ ПІДТРИМКУ!</h3>
+        <p>Разом ми сильні! Слава Україні!</p>
+        <div class="flag" aria-label="Прапор України"></div>
+      </section>
+
+      <section class="share">
+        <div class="section-title section-title--small">
+          <span></span>
+          <h2>ПОДІЛИТИСЯ ЗБОРОМ</h2>
+          <span></span>
+        </div>
+
+        <div class="share-grid">
+          <a id="telegramShare" class="share-item telegram" href="#" target="_blank" rel="noopener">
+            <b>↗</b><span>Telegram</span>
+          </a>
+          <a id="viberShare" class="share-item viber" href="#">
+            <b>V</b><span>Viber</span>
+          </a>
+          <a id="whatsappShare" class="share-item whatsapp" href="#" target="_blank" rel="noopener">
+            <b>W</b><span>WhatsApp</span>
+          </a>
+          <a id="facebookShare" class="share-item facebook" href="#" target="_blank" rel="noopener">
+            <b>f</b><span>Facebook</span>
+          </a>
+          <button id="copyLink" class="share-item" type="button">
+            <b>🔗</b><span>Копіювати посилання</span>
+          </button>
+          <button id="nativeShare" class="share-item" type="button">
+            <b>↗</b><span>Поділитися</span>
+          </button>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite">Скопійовано</div>
+  <script src="script.js"></script>
+</body>
+</html>
