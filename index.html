@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#090909" />
+  <meta name="description" content="Збір на комплект автомобільних шин для військових 18-го ОЦПТР." />
+  <title>Збір на шини для військових</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <div class="flag" aria-label="Прапор України">
+          <span></span><span></span>
+        </div>
+
+        <p class="eyebrow">Підтримка військових</p>
+        <h1>ЗБІР</h1>
+        <div class="title-strip">НА ШИНИ ДЛЯ ВІЙСЬКОВИХ</div>
+        <h2>18-ГО ОЦПТР <small>(в/ч А4924)</small></h2>
+
+        <p class="hero-lead">
+          Кожна поїздка — <strong>це ще один день життя.</strong>
+        </p>
+        <p class="hero-copy">
+          Щоб повернутися до своїх.<br />
+          Щоб обійняти рідних.<br />
+          Щоб жити. Для себе і для них.
+        </p>
+      </div>
+    </section>
+
+    <section class="container content">
+      <article class="goal card">
+        <div>
+          <p class="section-kicker">Ціль збору</p>
+          <div class="amount">30 000 <span>грн</span></div>
+          <p>на комплект автомобільних шин</p>
+        </div>
+
+        <button class="primary-btn" id="payButton" type="button">
+          <span class="card-icon" aria-hidden="true"></span>
+          <span>
+            <b>Поповнити картку</b>
+            <small>Номер буде скопійовано автоматично</small>
+          </span>
+        </button>
+      </article>
+
+      <article class="card card-number" id="cardBlock">
+        <p class="section-kicker">Номер картки</p>
+        <div class="number-row">
+          <button class="copy-value" data-copy="4149511028197408" type="button" aria-label="Скопіювати номер картки">
+            <span class="card-number-text">4149 5110 2819 7408</span>
+            <span class="copy-mark">⧉</span>
+          </button>
+        </div>
+        <button class="secondary-btn" data-copy="4149511028197408" type="button">
+          Скопіювати номер картки
+        </button>
+        <p class="status" id="copyStatus" aria-live="polite"></p>
+      </article>
+
+      <article class="card requisites">
+        <div class="requisites-head">
+          <div>
+            <p class="section-kicker">Реквізити для підтримки</p>
+            <h3>Банківські дані</h3>
+          </div>
+          <button class="outline-btn" id="copyAll" type="button">Скопіювати все</button>
+        </div>
+
+        <dl>
+          <div>
+            <dt>ПІБ отримувача</dt>
+            <dd>
+              <span>Патюк Андрій Юрійович</span>
+              <button data-copy="Патюк Андрій Юрійович" type="button" aria-label="Скопіювати ПІБ">⧉</button>
+            </dd>
+          </div>
+
+          <div>
+            <dt>ІПН</dt>
+            <dd>
+              <span>3263121630</span>
+              <button data-copy="3263121630" type="button" aria-label="Скопіювати ІПН">⧉</button>
+            </dd>
+          </div>
+
+          <div>
+            <dt>IBAN</dt>
+            <dd>
+              <span class="iban">UA14 300335 000000 02620916652865</span>
+              <button data-copy="UA1430033500000002620916652865" type="button" aria-label="Скопіювати IBAN">⧉</button>
+            </dd>
+          </div>
+
+          <div>
+            <dt>Призначення платежу</dt>
+            <dd>
+              <span>Поповнення скрині</span>
+              <button data-copy="Поповнення скрині" type="button" aria-label="Скопіювати призначення платежу">⧉</button>
+            </dd>
+          </div>
+        </dl>
+      </article>
+
+      <article class="appeal card">
+        <div class="emblem" aria-hidden="true">УКР</div>
+        <div>
+          <p>
+            Друзі, звертаюся до вас із проханням підтримати наш екіпаж.
+            Я, Патюк Андрій Юрійович, військовослужбовець 18-го окремого центру
+            протидії технічним розвідкам (в/ч А4924), відкрив збір на придбання
+            автомобільних шин для службового автомобіля.
+          </p>
+          <p class="muted">Кожен внесок наближає нас до цілі.</p>
+        </div>
+      </article>
+
+      <section class="share card">
+        <p class="section-kicker">Поділіться збором із друзями</p>
+        <div class="share-grid">
+          <button class="share-btn telegram" data-share="telegram" type="button">Telegram</button>
+          <button class="share-btn viber" data-share="viber" type="button">Viber</button>
+          <button class="share-btn facebook" data-share="facebook" type="button">Facebook</button>
+          <button class="share-btn whatsapp" data-share="whatsapp" type="button">WhatsApp</button>
+          <button class="share-btn link" data-share="copy" type="button">Копіювати посилання</button>
+        </div>
+      </section>
+
+      <footer>
+        <span>РАЗОМ ДО ПЕРЕМОГИ!</span>
+        <span>СЛАВА УКРАЇНІ! 🇺🇦</span>
+      </footer>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
